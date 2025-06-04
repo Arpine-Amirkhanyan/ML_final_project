@@ -99,3 +99,22 @@
 -   survival_status։
     - 0 - ողջ
     - 1 - մահացած
+
+## Exploratory Data Analysis (EDA)
+- Թվային փոփոխականների բաշխումների վիզուալիզացիա
+- Կոռելացիոն մատրիցի պատկերում
+- Փոփոխականների համեմատական բաշխումները 'Survived' և 'Not survived' պացիենտների համար 
+
+## Մոդելում օգտագործված հատկանիշները
+Recipientage, Donorage, CD34kgx10d6, CD3dkgx10d8, aGvHDIIIIV, ANCrecovery, Gendermatch, PLTrecovery, HLAmatch, Diseasegroup, Relapse, Txpostrelapse, Rbodymass, Stemcellsource և survival_status (target փոփոխական)
+
+## Տվայլաների նախապատրաստում (Data Preprocessing)
+- Byte string փոփոխականների տիպի ձևափոխում
+- Կատեգորիկ HLAmatch փոփխականի ձևափոխություն
+- Բացակայող տվյալների լրացում ('CD3dkgx10d8' և 'Rbodymass' սյուներում)
+- Ընտրված հատկանիշների կոռելացիայի ստուգում
+
+## Մոդելներ և արդյունքներ
+- Լոգիստիկ ռեգրեսիա
+- Random Forest
+- Gradient Boosting
